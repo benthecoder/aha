@@ -1,0 +1,87 @@
+body {
+  width: 300px;
+  height: 400px;
+  padding: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  overflow-y: auto;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+h1,
+h4 {
+  margin-bottom: 16px;
+  color: #1a1a1a;
+}
+
+.toggle-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.switch {
+  margin-right: 8px;
+}
+
+.historical-calls-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 8px;
+}
+
+.historical-item {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.2s, box-shadow 0.2s;
+  font-size: 14px;
+  color: #333;
+}
+
+.historical-item:hover {
+  background-color: #f0f0f0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.explanation-popup {
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  right: 8px;
+  bottom: 8px;
+  background-color: #ffffff;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+.explanation-header {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  padding-right: 24px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #666;
+}
+
+.explanation-content {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aha</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <h1>Aha</h1>
+    <div class="toggle-container">
+      <label class="switch">
+        <input type="checkbox" id="toggleLinks" />
+        <span class="slider round"></span>
+      </label>
+      <span>Toggle Links</span>
+    </div>
+    <br />
+    <h4>Recent Explanations</h4>
+    <div id="historicalCalls" class="historical-calls-container"></div>
+    <script src="/lib/marked.min.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>
