@@ -156,7 +156,6 @@ function positionPopup(popup) {
   popup.style.left = `${left}px`;
   popup.style.top = `${topMargin}px`;
 }
-style.top = `${top}px`;
 
 // Popup content and functionality
 function setupPopupButtons(shadow, selectedText, explanationData) {
@@ -354,6 +353,7 @@ function loadExternalCSS(shadow) {
       display: flex;
       flex-direction: column;
       overflow: hidden;
+      color: #000000; /* Ensure text color is always black */
     }
 
     .aha-explanation-content {
@@ -361,6 +361,7 @@ function loadExternalCSS(shadow) {
       display: flex;
       flex-direction: column;
       height: 100%;
+      color: #000000; /* Ensure text color is always black */
     }
 
     .aha-explanation-header {
@@ -397,6 +398,7 @@ function loadExternalCSS(shadow) {
       font-size: 13px;
       line-height: 1.4;
       max-height: calc(80vh - 80px);
+      color: #000000; /* Ensure text color is always black */
     }
 
     .aha-footer {
@@ -410,10 +412,12 @@ function loadExternalCSS(shadow) {
       font-size: 14px;
       cursor: pointer;
       padding: 4px;
+      color: #000000; /* Ensure text color is always black */
     }
 
     #aha-explanation-text * {
       max-width: 100%;
+      color: #000000; /* Ensure text color is always black */
     }
 
     #aha-explanation-text ul, #aha-explanation-text ol {
@@ -423,6 +427,7 @@ function loadExternalCSS(shadow) {
     #aha-explanation-text {
       word-wrap: break-word;
       overflow-wrap: break-word;
+      color: #000000; /* Ensure text color is always black */
     }
 
     #aha-explanation-text a {
