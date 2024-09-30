@@ -79,7 +79,7 @@ async function explainText(tabId, text, pageTitle) {
 
     // Only fetch EXA links if getLinks is true
     if (getLinks) {
-      const exaResponse = await fetchExaLinks(text);
+      const exaResponse = await fetchExaLinks(text, pageTitle);
       combinedResponse.relatedLinks = exaResponse;
     }
 
