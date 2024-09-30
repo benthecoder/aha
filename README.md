@@ -30,6 +30,6 @@
    - Enable "Developer mode" in the top right.
    - Click "Load unpacked" and select the project
 
-## Future
+## TODO
 
 - create a server to host API calls
