@@ -1,6 +1,6 @@
 let EXA_API_KEY = '<YOUR_API_KEY>';
 
-export async function fetchExaLinks(text) {
+export async function fetchExaLinks(text, articleTitle) {
   console.log('Sending request to EXA API');
   const response = await fetch('https://api.exa.ai/search', {
     method: 'POST',
@@ -11,7 +11,7 @@ export async function fetchExaLinks(text) {
     },
     // https://docs.exa.ai/reference/search
     body: JSON.stringify({
-      query: `useful links to learn more about ${text}`,
+      query: `useful links to learn more about "${text}" in the context of "${articleTitle}"`,
       type: 'neural',
       useAutoprompt: true,
       numResults: 5,
@@ -35,6 +35,10 @@ export async function fetchExaLinks(text) {
         if (!title) {
           const urlObj = new URL(result.url);
           title = urlObj.hostname;
+        }
+        // Trim long titles
+        if (title.length > 50) {
+          title = title.substring(0, 47) + '...';
         }
         return `- [${title}](${result.url})`;
       })
