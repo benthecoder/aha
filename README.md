@@ -9,7 +9,7 @@
 ## Features
 
 - **easy access**: Highlight text and hit Command/Ctrl + Shift + X
-- **lightning fast**: Uses **Cerebras Llama 3.1 80b** for lighting-fast responses.
+- **lightning fast**: Uses **Cerebras Llama 3.1 70b** for lighting-fast responses.
 - **context-aware**: Uses the page title as context to explain the highlighted term
 - **useful resources**: Fetch additional learning materials via **Exa.ai**.
 - **markdown support**: easily copy explanations in markdown format
